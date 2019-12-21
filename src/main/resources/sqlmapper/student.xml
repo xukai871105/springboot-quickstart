@@ -15,4 +15,9 @@
         select * from students
     </select>
 
+    <select id="findStudentsByBirthdayRange" resultMap="studentMap">
+        select * from students where birthday <![CDATA[>]]> #{from} and birthday <![CDATA[<]]> #{end}
+    </select>
+
+
 </mapper>
