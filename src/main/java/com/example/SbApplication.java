@@ -10,6 +10,9 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * @author xukai
+ */
 @SpringBootApplication
 public class SbApplication implements CommandLineRunner {
 
@@ -23,10 +26,10 @@ public class SbApplication implements CommandLineRunner {
     @Override
     @SuppressWarnings("squid:S106")
     public void run(String... args) throws SQLException {
-        initDb();
+        initDatabase();
     }
 
-    private void initDb() throws SQLException {
+    private void initDatabase() throws SQLException {
         Connection conn = sqlSessionFactory.openSession().getConnection();
         Statement statement = conn.createStatement();
         statement.addBatch("drop table if exists cities;");

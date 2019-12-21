@@ -1,10 +1,9 @@
-package com.example;
+package com.example.city;
 
 /**
- * @author terry
- * @since 19/07/2019
+ * @author xukai
  */
-public class CityDo {
+public class CityDO {
     private Long id;
 
     private String name;

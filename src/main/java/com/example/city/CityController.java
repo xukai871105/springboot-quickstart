@@ -1,4 +1,4 @@
-package com.example;
+package com.example.city;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +18,7 @@ public class CityController {
 
     @RequestMapping(value = "/index")
     @ResponseBody
-    public CityDo info() {
+    public CityDO info() {
         log.info("info");
         return this.cityMapper.findByState("Jiangsu");
     }
