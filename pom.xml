@@ -8,10 +8,10 @@
         <version>2.1.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cn.littleterry.sb</groupId>
-    <artifactId>SpringBootMybatis-Simple</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>springboot-quickstart</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpringBootMybatis-Simple</name>
+    <name>springboot-quickstart</name>
 
 
     <properties>
