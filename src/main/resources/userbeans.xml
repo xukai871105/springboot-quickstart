@@ -4,10 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--    通过Setter方法注入 -->
+    <!--  通过Setter方法注入 -->
+    <!--  使用配置文件变量替代 -->
     <bean id="rootUser" class="com.example.bean.User">
-        <property name="name" value="root" />
-        <property name="age" value="35" />
+        <property name="name" value="${user.root.name}" />
+        <property name="age" value="${user.root.age}" />
     </bean>
 
 </beans>
