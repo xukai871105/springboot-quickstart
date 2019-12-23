@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    通过Setter方法注入 -->
+    <bean id="rootUser" class="com.example.bean.User">
+        <property name="name" value="root" />
+        <property name="age" value="35" />
+    </bean>
+
+</beans>

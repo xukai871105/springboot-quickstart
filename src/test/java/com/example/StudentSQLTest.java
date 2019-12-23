@@ -4,7 +4,6 @@ import com.example.student.StudentDO;
 import com.example.student.StudentMapper;
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.apache.commons.lang3.time.DateUtils;
-import org.assertj.core.util.DateUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -18,7 +17,7 @@ import java.util.Date;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = {TestApplication.class})
+@SpringBootTest(classes = {TestMybatisApplication.class})
 public class StudentSQLTest {
 
     private static Logger log = LoggerFactory.getLogger(StudentSQLTest.class);

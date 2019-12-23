@@ -7,9 +7,9 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication(scanBasePackages = {"com.example.student"})
 @PropertySource(value = {"classpath:test.properties"})
-public class TestApplication {
+public class TestMybatisApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TestApplication.class, args);
+        SpringApplication.run(TestMybatisApplication.class, args);
     }
 }
